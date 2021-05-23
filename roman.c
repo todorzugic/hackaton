@@ -31,7 +31,7 @@ int value (char t)
     return -1;
 }
 
-void romanic(char *str)
+int romanToInt(char *str)
 {
     int res;
     int val1;
@@ -52,10 +52,11 @@ void romanic(char *str)
             res = res + val1;
     }
     printf("Output: %d\n", res);
+    return (0);
 }
 
 int main (int argc, char **argv)
 {
-    romanic(argv[1]);
+    romanToInt(argv[1]);
     return (0);
 }
