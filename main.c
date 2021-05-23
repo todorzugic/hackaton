@@ -15,18 +15,18 @@ int firstBadVersion(int n)
 {
     int t = 0;
 
-    while (n != 0) {
-        if (isBadVersion(n) == true)
-            printf("Output: %d\n", (n));
-        n--;
-    }
+    while (isBadVersion(t) == false)
+        t++;
     return (0);
 }
 
 int main(char **argv, int argc)
 {
+    int t;
+
     if (error_handling(argv, argc) == 84)
         return (84);
-    firstBadVersion(atoi(argv[1]));
+    t = firstBadVersion(atoi(argv[1]));
+    printf("Output: %d\n", t);
     return (0);
 }
