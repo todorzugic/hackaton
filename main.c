@@ -17,7 +17,7 @@ int firstBadVersion(int n)
 
     while (isBadVersion(t) == false)
         t++;
-    return (0);
+    return (t);
 }
 
 int main(char **argv, int argc)
