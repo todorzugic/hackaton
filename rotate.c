@@ -14,7 +14,7 @@ int maxRotateFunction(int* nums, int numsSize)
 	int temp = 0;
 
 	for(int t = 0; t < numsSize; t++) {
-        if (t == INT_MAX || t == INT_MIN)
+        if (nums[t] == INT_MAX || nums[t] == INT_MIN)
             return (84);
 		temp += t * nums[t];
 		total += nums[t];
