@@ -30,5 +30,5 @@ int main (int argc, char **argv)
     int nums[4] = {4,3,2,6};
 
     maxRotateFunction(nums, 4);
-
+    return (0);
 }
