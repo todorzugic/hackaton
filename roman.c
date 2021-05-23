@@ -51,12 +51,10 @@ int romanToInt(char *str)
         else
             res = res + val1;
     }
-    printf("Output: %d\n", res);
-    return (0);
+    return (res);
 }
 
 int main (int argc, char **argv)
 {
-    romanToInt(argv[1]);
-    return (0);
+    return (romanToInt(argv[1]));
 }
