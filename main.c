@@ -27,6 +27,6 @@ int main(char **argv, int argc)
 {
     if (error_handling(argv, argc) == 84)
         return (84);
-    firstBadVersion(argv[1]);
+    firstBadVersion(atoi(argv[1]));
     return (0);
 }
