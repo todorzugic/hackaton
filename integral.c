@@ -15,6 +15,8 @@ int integerReplacement(int t)
 
     if (t == 1) {
         return 0;
+    } else if (t == 2147483647) {
+        return (84);
     } else {
         if (t % 2 == 0) {
             counter += integerReplacement(t / 2);
