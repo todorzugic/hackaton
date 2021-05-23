@@ -15,10 +15,11 @@ int firstBadVersion(int n)
 {
     int t = 0;
 
-    while (isBadVersion(t) == false) {
-        t++;
+    while (n != 0) {
+        if (isBadVersion(n) == true)
+            printf("Output: %d\n", (n));
+        n--;
     }
-    printf("Output: %d\n", (t + 1));
     return (0);
 }
 
