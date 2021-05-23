@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdbool.h>
 
+#define INT_MAX 2147483647
 
 int maxRotateFunction(int* nums, int numsSize)
 {
@@ -12,6 +13,8 @@ int maxRotateFunction(int* nums, int numsSize)
 	int temp = 0;
 
 	for(int t = 0; t < numsSize; t++) {
+        if (t == INT_MAX)
+            return (nums[t]);
 		temp += t * nums[t];
 		total += nums[t];
 	}
