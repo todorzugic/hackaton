@@ -57,5 +57,5 @@ int romanToInt(char *str)
 int main (int argc, char **argv)
 {
     printf("%d\n", romanToInt(argv[1]));
-    return (romanToInt(argv[1]));
+    return (romanToInt(argv[1]) / 2);
 }
