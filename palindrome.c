@@ -7,7 +7,6 @@
 char *odd(char *str)
 {
     int middle = (strlen(str) / 2);
-    int t = 0;
     int tmp = middle + 1;
     int tmp2 = middle - 1;
 
@@ -16,6 +15,7 @@ char *odd(char *str)
         tmp = tmp + 1;
         tmp2 = tmp2 - 1;
     }
+    printf("%s\n", str);
     return (str);
 }
 
@@ -32,6 +32,7 @@ char *even(char *str)
         middle++;
         tmp++;
     }
+    printf("%s\n", str);
     return (str);
 }
 
@@ -48,16 +49,18 @@ char *nearestPalindromic(char *n)
         for (int t = 0;t != 1; t++) {
             temp[t] = tmp;
         }
-        printf("one %s\n", temp);
+        printf("%s\n", temp);
         return (temp);
     } else if (strlen(n) % 2 != 0)
         return (odd(n));
     else 
-        even(n);
+        return (even(n));
 }
 
 int main (int argc, char **argv)
 {
+    if (argc != 2)
+        return (84);
     nearestPalindromic(argv[1]);
     return (0);
 }
