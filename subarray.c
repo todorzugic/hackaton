@@ -24,7 +24,7 @@ int coutner(int size, int diff)
 
     while (diff != 0) {
         sum = size * diff;
-        diff = diff - 1;
+        diff--;
     }
     return (sum);
 }
